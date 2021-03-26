@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\arrud\Desktop\Faculdade\1-Aula-Online\desenvolvimento-web\eclipse\.metadata\.plugins\org.eclipse.jdt.core
+2821593137.index
+3839759831.index
