@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title>{{ titulo }}</mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>-- Selecione a discilina --</mat-label>
+      <mat-select [(ngModel)]="matricula.aluno" name="aluno">
+        <mat-option *ngFor="let aluno of alunos" [value]="aluno">
+          {{aluno.pessoa.nmPessoa}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>-- Selecione uma Pessoa --</mat-label>
+      <mat-select [(ngModel)]="matricula.oferta" name="oferta">
+        <mat-option *ngFor="let oferta of ofertas" [value]="oferta">
+          {{oferta.disciplina.nmDisciplina}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+
+  <button mat-raised-button color="primary" (click)="salvar()">Salvar</button>
+  <button mat-raised-button color="warn" routerLink="/matricula/list">Cancelar</button>
+
+</mat-card>
